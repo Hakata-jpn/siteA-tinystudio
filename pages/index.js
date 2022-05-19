@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
 
       <main>
         <header>
+          <div>
+            <svg src="/assets/logo1.svg" alt="tinystudio logo"  layout="fill"/>
           <h1>tinystudio<span>CS</span></h1>
+          </div>
           <nav>
               <a href='#'>home</a>
               <a href='#'>about</a>
@@ -29,7 +33,7 @@ export default function Home() {
 
         {/* Portfolio Section */}
         <section className='portfolio'>
-          <h2>Portfolio</h2>
+          <h2>portfolio</h2>
           <p>coming soon.</p>
         </section>
 

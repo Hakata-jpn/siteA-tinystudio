@@ -1,26 +1,68 @@
+/* TODO: 
+- Center "ABOUT US" text
+- Edit Footer
+- Fix svg implementation
+- Hamburger Menu
+- Media Queries
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Quicksand:wght@300;400&display=swap');
+
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --main-purple: #7F499D;
   --bg-black: #222;
+  --white: white;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex: auto 0 0;
+  max-width: 100vw;
+}
+
+container {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma sans-serif;
+}
+
+h1 span {
+  color: var(--main-purple)
+}
+
+h2 {
+  font-family: 'Quicksand', Segoe UI, Tahoma, sans-serif;
 }
 
 header {
-  min-height: calc(100%/3);
+  min-height: calc(100vh/3);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
+section, footer, header {
+  max-width: 90%;
+  padding: 0 5% 0 5%;
+}
+
 .about {
-  min-height: calc(100%/3);
+  min-height: calc(100vh/3);
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: var(--bg-black);
+  color: var(--white);
 }
 
 .portfolio {
-  min-height: calc(100%/3);
+  min-height: calc(100vh/3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,11 +70,13 @@ header {
 }
 
 footer {
-  height: calc(100%/3);
+  height: calc(100vh/3);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background-color: var(--bg-black);
+  color: var(--white);
 }
 
 .input-form label {
