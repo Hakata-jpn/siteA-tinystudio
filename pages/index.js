@@ -11,13 +11,46 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+        <header>
+          <h1>tinystudio<span>CS</span></h1>
+          <nav>
+              <a href='#'>home</a>
+              <a href='#'>about</a>
+              <a href='#'>porfolio</a>
+              <a href='#'>contact</a>
+          </nav>
+        </header>
 
-      <Footer />
+        {/* About us */}
+        <section className='about'>
+          <h2>about us</h2>
+          <p>We create interactive web experiences and brands with you so that your customers can experience your transformation.</p>
+        </section>
+
+        {/* Portfolio Section */}
+        <section className='portfolio'>
+          <h2>Portfolio</h2>
+          <p>coming soon.</p>
+        </section>
+
+        <footer>
+        <h2>contact</h2>
+          <form name="contact" method="POST" data-netlify="true">
+            <div className='input-form'>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </div>
+            <div className='input-form'>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </div>
+            <div className='input-form'>
+              <label>Message: <textarea name="message"></textarea></label>
+            </div>
+            <div>
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </footer>
+      </main>
     </div>
   )
 }

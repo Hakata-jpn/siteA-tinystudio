@@ -1,35 +1,43 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
 * {
-  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --main-purple: #7F499D;
+  --bg-black: #222;
 }
 
-main {
-  padding: 5rem 0;
-  flex: 1;
+header {
+  min-height: calc(100%/3);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+.about {
+  min-height: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.container {
-  height: 100vh;
+.portfolio {
+  min-height: calc(100%/3);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
+
+footer {
+  height: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
