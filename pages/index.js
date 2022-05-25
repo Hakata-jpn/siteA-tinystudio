@@ -4,25 +4,24 @@ import Footer from '@components/Footer'
 import Image from 'next/image'
 
 export default function Home() {
+
+
+
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>TinyStudioCR | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <header>
-          <div>
-            <svg src="/assets/logo1.svg" alt="tinystudio logo"  layout="fill"/>
+          <div className='headerGroup'>
+            <div className='logoContainer'>
+              <Image src="/logo1.svg" alt="tinystudiologo" width={200} height={200}  layout="responsive" />
+            </div>
           <h1>tinystudio<span>CS</span></h1>
           </div>
-          <nav>
-              <a href='#'>home</a>
-              <a href='#'>about</a>
-              <a href='#'>porfolio</a>
-              <a href='#'>contact</a>
-          </nav>
         </header>
 
         {/* About us */}

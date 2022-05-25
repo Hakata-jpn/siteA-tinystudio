@@ -1,9 +1,9 @@
 /* TODO: 
-- Center "ABOUT US" text
 - Edit Footer
 - Fix svg implementation
 - Hamburger Menu
 - Media Queries
+- Clean up duplicate CSS properties
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Quicksand:wght@300;400&display=swap');
@@ -36,47 +36,40 @@ h1 span {
 }
 
 h2 {
-  font-family: 'Quicksand', Segoe UI, Tahoma, sans-serif;
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, sans-serif;
 }
 
 header {
   min-height: calc(100vh/3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.logoContainer {
+  max-width: 30vw;
+  margin: auto;
 }
 
 section, footer, header {
+  height: calc(100vh/3);
   max-width: 90%;
   padding: 0 5% 0 5%;
-}
-
-.about {
-  min-height: calc(100vh/3);
   display: flex;
   flex-direction: column;
+}
+
+.about, footer {
+  justify-content: center;
   text-align: center;
   background-color: var(--bg-black);
   color: var(--white);
 }
 
 .portfolio {
-  min-height: calc(100vh/3);
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-footer {
-  height: calc(100vh/3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: var(--bg-black);
-  color: var(--white);
 }
 
 .input-form label {
