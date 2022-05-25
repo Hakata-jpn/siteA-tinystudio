@@ -1,7 +1,6 @@
 /* TODO: 
 - Edit Footer, clean up
 - Media Queries to scale up site to mobile and desktop
-- Clean up duplicate CSS properties
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Quicksand:wght@300;400&display=swap');
@@ -40,16 +39,6 @@ header {
   text-align: center;
   justify-content: center;
   align-content: center;
-}
-
-
-.logoContainer {
-  width: 30%;
-  max-width: 275px;
-  margin: auto;
-}
-
-section, footer, header {
   height: calc(100vh/3);
   max-width: 90%;
   padding: 0 5% 0 5%;
@@ -57,7 +46,33 @@ section, footer, header {
   flex-direction: column;
 }
 
-.about, footer {
+footer {
+  height: calc(100vh/3);
+  max-width: 90%;
+  padding: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--bg-black);
+  color: var(--white);
+}
+
+.logoContainer {
+  width: 30%;
+  max-width: 275px;
+  margin: auto;
+}
+
+section {
+  height: calc(100vh/3);
+  max-width: 90%;
+  padding: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
   justify-content: center;
   text-align: center;
   background-color: var(--bg-black);
