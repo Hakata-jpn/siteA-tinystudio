@@ -8,14 +8,15 @@ export default function Home() {
 
 
   return (
-    <div className="container">
+    
+    <div> {/*CONTAINTER DIV*/}
       <Head>
         <title>TinyStudioCR | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <header>
+      <main className='container'>
+        <header className='container puzzle-piece white'>
           <div className='headerGroup'>
             <div className='logoContainer'>
               <Image src="/logo1.svg" alt="tinystudiologo" width={200} height={200}  layout="responsive" />
@@ -25,18 +26,18 @@ export default function Home() {
         </header>
 
         {/* About us */}
-        <section className='about'>
+        <section className='container puzzle-piece black about'>
           <h2>about us</h2>
           <p>We create interactive web experiences and brands with you so that your customers can experience your transformation.</p>
         </section>
 
         {/* Portfolio Section */}
-        <section className='portfolio'>
+        <section className='container puzzle-piece white portfolio'>
           <h2>portfolio</h2>
           <p>coming soon.</p>
         </section>
 
-        <footer>
+        <footer className='container puzzle-piece black portfolio'>
         <h2>contact</h2>
           <form name="contact" method="POST" data-netlify="true">
             <div className='input-form'>
