@@ -1,9 +1,7 @@
 /* TODO: 
-- Edit Footer, clean up
-- Media Queries to scale up site to mobile and desktop
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Raleway&family=Titillium+Web&display=swap');
 
 * {
   --main-purple: #7F499D;
@@ -19,11 +17,11 @@ body {
 
 .container {
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 h1 {
-  font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', 'Tahoma', sans-serif;
 }
 
 h1 span {
@@ -31,62 +29,164 @@ h1 span {
 }
 
 h2 {
-  font-family: 'Quicksand', 'Segoe UI', Tahoma, sans-serif;
+  font-family: 'Raleway', 'Segoe UI', 'Tahoma', sans-serif;
 }
 
-header {
-  min-height: calc(100vh/3);
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-  height: calc(100vh/3);
-  max-width: 90%;
-  padding: 0 5% 0 5%;
+p {
+  font-family: 'Titillium Web', 'Segoe UI', 'Tahoma', sans-serif;
+}
+
+.main {
   display: flex;
   flex-direction: column;
 }
 
-footer {
-  height: calc(100vh/3);
-  max-width: 90%;
-  padding: 0 5% 0 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: var(--bg-black);
-  color: var(--white);
+.circle-white {
+  position: relative;
+  left: calc(50% - 48px);
+  bottom: calc(-48px);
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: white;
+  vertical-align: middle;
 }
 
-.logoContainer {
-  width: 30%;
-  max-width: 275px;
-  margin: auto;
+.circle-black {
+  position:relative;
+  left: calc(50% - 48px);
+  bottom: calc(48px);
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #222;
+  vertical-align: middle;
 }
 
-section {
-  height: calc(100vh/3);
-  max-width: 90%;
-  padding: 0 5% 0 5%;
-  display: flex;
-  flex-direction: column;
+
+
+@media (min-width:320px)  {
+  header {
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: calc(100vw);
+    max-width: 90%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    overflow: hidden;
+    height: calc(100vw);
+    max-width: 90%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-black);
+    color: var(--white);
+  }
+
+  .logoContainer {
+    width: 96px;
+    margin: auto;
+  }
+
+  section {
+    overflow: hidden;
+    height: calc(100vw);
+    max-width: 90%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-black);
+    color: var(--white);
+  }
+
+  .aboutdesc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+    text-align: center;
+  }
+
+  .portfolio {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .input-form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
 }
 
-.about {
-  justify-content: center;
-  text-align: center;
-  background-color: var(--bg-black);
-  color: var(--white);
-}
+@media (min-width:961px)  {
+  header {
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: calc(58.1vw);
+    max-width: 90%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.portfolio {
-  justify-content: center;
-  text-align: center;
-}
+  footer {
+    overflow: hidden;
+    height: calc(58.1vw);
+    max-width: 90%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-black);
+    color: var(--white);
+  }
 
-.input-form label {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
+  .logoContainer {
+    width: 96px;
+    margin: auto;
+  }
 
+  section {
+    overflow: hidden;
+    height: calc(58.1vw);
+    max-width: 90%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-black);
+    color: var(--white);
+  }
+
+  .portfolio {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .input-form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}
