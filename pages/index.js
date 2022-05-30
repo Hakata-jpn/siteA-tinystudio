@@ -16,6 +16,7 @@ export default function Home() {
       </Head>
 
       <main className='container'>
+        {/* Header */}
         <header className='container puzzle-piece white'>
           <div className='headerGroup'>
             <div className='logoContainer'>
@@ -24,19 +25,20 @@ export default function Home() {
           <h1>tinystudio<span>CS</span></h1>
           </div>
         </header>
-
+        <div className="circle-white"></div>
         {/* About us */}
         <section className='container puzzle-piece black about'>
           <h2>about us</h2>
-          <p>We create interactive web experiences and brands with you so that your customers can experience your transformation.</p>
+            <p className='aboutdesc'>We create interactive web experiences and brands with you so that your customers can experience your transformation.</p>
         </section>
-
+        <div className="circle-black"></div>
         {/* Portfolio Section */}
         <section className='container puzzle-piece white portfolio'>
           <h2>portfolio</h2>
           <p>coming soon.</p>
         </section>
-
+        <div className="circle-white"></div>
+        {/* Footer */}
         <footer className='container puzzle-piece black portfolio'>
         <h2>contact</h2>
           <form name="contact" method="POST" data-netlify="true">
