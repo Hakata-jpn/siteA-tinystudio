@@ -11,7 +11,7 @@ export default function Home() {
     
     <div> {/*CONTAINTER DIV*/}
       <Head>
-        <title>TinyStudioCR | Home</title>
+        <title>TinyStudioCS | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,7 +20,7 @@ export default function Home() {
         <header className='container puzzle-piece white'>
           <div className='headerGroup'>
             <div className='logoContainer'>
-              <Image src="/logo1.svg" alt="tinystudiologo" width={200} height={200}  layout="responsive" />
+              <Image src="/logo2.svg" alt="tinystudiologo" width={200} height={200}  layout="responsive" />
             </div>
           <h1>tinystudio<span>CS</span></h1>
           </div>
