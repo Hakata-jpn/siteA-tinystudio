@@ -11,7 +11,7 @@ export default function Home() {
     
     <div> {/*CONTAINTER DIV*/}
       <Head>
-        <title>TinyStudioCR | Home</title>
+        <title>TinyStudioCS | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -40,21 +40,9 @@ export default function Home() {
         <div className="circle-white"></div>
         {/* Footer */}
         <footer className='container puzzle-piece black portfolio'>
-        <h2>contact</h2>
-          <form name="contact" method="POST" data-netlify="true">
-            <div className='input-form'>
-              <label>Your Name: <input type="text" name="name" /></label>
-            </div>
-            <div className='input-form'>
-              <label>Your Email: <input type="email" name="email" /></label>
-            </div>
-            <div className='input-form'>
-              <label>Message: <textarea name="message"></textarea></label>
-            </div>
-            <div>
-              <button type="submit">Send</button>
-            </div>
-          </form>
+        <h2>contact us</h2>
+        <a><Image src="/twitter-Vector.svg" alt="twitter vector image" width="114px" height="114px" className="twitter"/></a>
+        <a><Image src="/email-Vector.svg" alt="email vector image" width="95px" height="76px" className="email"/></a>
         </footer>
       </main>
     </div>

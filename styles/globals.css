@@ -63,6 +63,14 @@ p {
   vertical-align: middle;
 }
 
+.twitter {
+  margin-top: 106px;
+}
+
+.email {
+  margin-top: 214px;
+}
+
 
 
 @media (min-width:320px)  {
@@ -111,6 +119,7 @@ p {
     text-align: center;
     background-color: var(--bg-black);
     color: var(--white);
+    height: calc(100vw);
   }
 
   .aboutdesc {
@@ -123,6 +132,7 @@ p {
   .portfolio {
     justify-content: center;
     text-align: center;
+    height: calc(100vw);
   }
 
   .input-form label {
@@ -177,11 +187,13 @@ p {
     text-align: center;
     background-color: var(--bg-black);
     color: var(--white);
+    height: calc(58.1vw);
   }
 
   .portfolio {
     justify-content: center;
     text-align: center;
+    height: calc(58.1vw);
   }
 
   .input-form label {
