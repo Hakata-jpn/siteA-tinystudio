@@ -1,3 +1,9 @@
+.logo {
+    width: 104px;
+    height: 104px;
+    z-index: 999;
+}
+
 .sectiondiv {
     display:flex;
     flex-direction: column;
@@ -7,32 +13,26 @@
     align-items: center;
     clear: both;
 }
-
-.sectionheading {
-    font-family: 'Raleway', 'Segoe UI', 'Tahoma', sans-serif;
-    font-size: 24px;
-    z-index: 999;
-}
-
-.sectiontext {
-    font-family: 'Titillium Web', 'Segoe UI', 'Tahoma', sans-serif;
-    font-size: 16px;
-    z-index: 999;
-  }
-
 @media (min-width:320px) {
     .sectiondiv {
         height: 100vw;
         width: 100vw;
-        text-align: center;
-        
+  
     }
-}
-
-@media (min-width:900px)  {
+  }
+  
+  @media (min-width:900px)  {
     .sectiondiv {
         height: 65.02vw;
         width: 100vw;
-        overflow: hidden;
     }
+  }
+
+.h1 {
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', 'Tahoma', sans-serif;
+    z-index: 999;
+}
+  
+.CSspan {
+    color: var(--main-purple);
 }

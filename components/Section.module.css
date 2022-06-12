@@ -1,0 +1,38 @@
+.sectiondiv {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  clear: both;
+}
+
+@media (min-width:320px) {
+  .sectiondiv {
+      height: 100vw;
+      width: 100vw;
+
+  }
+}
+
+@media (min-width:900px)  {
+  .sectiondiv {
+      height: 65.02vw;
+      width: 100vw;
+  }
+}
+
+.sectionheading {
+    font-family: 'Raleway', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 24px;
+    z-index: 999;
+}
+
+.sectiontext {
+    font-family: 'Titillium Web', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 16px;
+    width: 210px;
+    z-index: 999;
+  }
