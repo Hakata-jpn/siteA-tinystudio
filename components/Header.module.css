@@ -1,6 +1,7 @@
 .logo {
     width: 200px;
     height: 200px;
+    z-index: 999;
 }
 
 .sectiondiv {
@@ -29,8 +30,10 @@
 
 .h1 {
     font-family: 'Plus Jakarta Sans', 'Segoe UI', 'Tahoma', sans-serif;
+    z-index: 999;
 }
   
 .h1 span {
-    color: var(--main-purple)
+    color: var(--main-purple);
+    z-index: 999;
 }
