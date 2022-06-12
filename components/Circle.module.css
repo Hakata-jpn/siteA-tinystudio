@@ -1,0 +1,16 @@
+.sectioncircle {
+    position: relative;
+    left: calc(50% - 48px);
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    margin-top: -48px;
+    position:absolute;
+
+  }
+
+
+    

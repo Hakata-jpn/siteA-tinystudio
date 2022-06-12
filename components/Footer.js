@@ -1,16 +1,19 @@
-import styles from './Section.module.css'
+import styles from './Footer.module.css'
+import Image from 'next/image'
 
 const Footer = (props) => {
     const style = {
-        backgroundColor: props.bgcolor
+        backgroundColor: props.bgcolor,
+        color: props.color
     }
     const heading = props.heading
     const text = props.text
 
   return (
-    <div style={style} className={styles.section-div}>
-    <h2 className={styles.section-heading}>{heading}</h2>
-    <p className={styles.section-text}>{text}</p>
+    <div style={style} className={styles.sectiondiv}>
+      <h2 className={styles.sectionheading}>{heading}</h2>
+      <a href="https://twitter.com/tinystudioCS" target="_blank"><Image src="/twitter-Vector.svg" alt="twitter vector image" width="114px" height="114px" className="twitter"/></a><br/>
+      <a href="mailto:tinystudioCS@gmail.com" target="_blank"><Image src="/email-Vector.svg" alt="email vector image" width="95px" height="76px" className="email"/></a>
     </div>
   )
 }

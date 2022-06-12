@@ -1,3 +1,8 @@
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
 .sectiondiv {
     display:flex;
     flex-direction: column;
@@ -7,28 +12,25 @@
     align-items: center;
     clear: both;
 }
-
-.sectionheading {
-    font-family: 'Raleway', 'Segoe UI', 'Tahoma', sans-serif;
-}
-
-.sectiontext {
-    font-family: 'Titillium Web', 'Segoe UI', 'Tahoma', sans-serif;
-  }
-
 @media (min-width:320px) {
     .sectiondiv {
         height: 100vw;
         width: 100vw;
-        text-align: center;
-        
+  
     }
-}
-
-@media (min-width:900px)  {
+  }
+  
+  @media (min-width:900px)  {
     .sectiondiv {
         height: 65.02vw;
         width: 100vw;
-        overflow: hidden;
     }
+  }
+
+.h1 {
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', 'Tahoma', sans-serif;
+}
+  
+.h1 span {
+    color: var(--main-purple)
 }
