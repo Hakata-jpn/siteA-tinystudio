@@ -1,6 +1,6 @@
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 104px;
+    height: 104px;
     z-index: 999;
 }
 
@@ -33,7 +33,6 @@
     z-index: 999;
 }
   
-.h1 span {
+.CSspan {
     color: var(--main-purple);
-    z-index: 999;
 }

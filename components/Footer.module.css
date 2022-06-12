@@ -10,11 +10,13 @@
 
 .sectionheading {
     font-family: 'Raleway', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 24px;
     z-index: 999;
 }
 
 .sectiontext {
     font-family: 'Titillium Web', 'Segoe UI', 'Tahoma', sans-serif;
+    font-size: 16px;
     z-index: 999;
   }
 

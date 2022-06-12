@@ -12,8 +12,8 @@ const Footer = (props) => {
   return (
     <div style={style} className={styles.sectiondiv}>
       <h2 className={styles.sectionheading}>{heading}</h2>
-      <a href="https://twitter.com/tinystudioCS" target="_blank"><Image src="/twitter-Vector.svg" alt="twitter vector image" width="114px" height="114px" className="twitter"/></a><br/>
-      <a href="mailto:tinystudioCS@gmail.com" target="_blank"><Image src="/email-Vector.svg" alt="email vector image" width="95px" height="76px" className="email"/></a>
+      <a href="https://twitter.com/tinystudioCS" target="_blank"><Image src="/twitter-Vector.svg" alt="twitter vector image" width="49px" height="49px" className="twitter"/></a><br/>
+      <a href="mailto:tinystudioCS@gmail.com" target="_blank"><Image src="/email-Vector.svg" alt="email vector image" width="49px" height="49px" className="email"/></a>
     </div>
   )
 }
