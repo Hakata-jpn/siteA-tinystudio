@@ -1,6 +1,6 @@
 import styles from './Section.module.css'
 
-const Footer = (props) => {
+const Section = (props) => {
     const style = {
         backgroundColor: props.bgcolor
     }
@@ -11,8 +11,9 @@ const Footer = (props) => {
     <div style={style} className={styles.section-div}>
     <h2 className={styles.section-heading}>{heading}</h2>
     <p className={styles.section-text}>{text}</p>
+    <div style={style} className={styles.section-circle}></div>
     </div>
   )
 }
 
-export default Footer
+export default Section

@@ -28,14 +28,6 @@ h1 span {
   color: var(--main-purple)
 }
 
-h2 {
-  font-family: 'Raleway', 'Segoe UI', 'Tahoma', sans-serif;
-}
-
-p {
-  font-family: 'Titillium Web', 'Segoe UI', 'Tahoma', sans-serif;
-}
-
 form {
   display: flex;
   flex-direction: column;
@@ -63,28 +55,6 @@ button {
 .main {
   display: flex;
   flex-direction: column;
-}
-
-.circle-white {
-  position: relative;
-  left: calc(50% - 48px);
-  bottom: calc(-48px);
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  background-color: white;
-  vertical-align: middle;
-}
-
-.circle-black {
-  position:relative;
-  left: calc(50% - 48px);
-  bottom: calc(48px);
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  background-color: #222;
-  vertical-align: middle;
 }
 
 .twitter {
